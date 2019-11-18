@@ -20,3 +20,7 @@ class TestP3(unittest.TestCase):
     def test_p3(self):
         self.assertEqual(p3('Mr John Smith   ', 13), 'Mr%20John%20Smith')
         self.assertEqual(p3('This is a test     ', 14), 'This%20is%20a%20test')
+
+if __name__ == '__main__':
+    temp = input("Enter a string to URLify:")
+    print(p3(temp, len(temp)))

@@ -22,3 +22,8 @@ class TestP2(unittest.TestCase):
         self.assertTrue(p2("cat","tac"))
         self.assertTrue(p2("own", "won"))
         self.assertFalse(p2("chicken", "butt"))
+
+if __name__ == '__main__':
+    temp = input("Enter a string:")
+    temp2 = input("Enter a string to see if it is a permutation of the other:")
+    print(p2(temp, temp2))

@@ -32,5 +32,9 @@ class TestP4(unittest.TestCase):
     def test_p4(self):
         self.assertTrue(p4("Taco cat"))
         self.assertTrue(p4("race car"))
-        self.assertFalse(p4("buttstuff"))
+        self.assertFalse(p4("not permutation or  palindrome"))
         self.assertTrue(p4("poopystuffys u"))
+
+if __name__ == '__main__':
+    temp = input("Enter a string to see if a permutation results in a palindrome:")
+    print(p4(temp))

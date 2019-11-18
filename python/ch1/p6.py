@@ -37,3 +37,7 @@ class TestP6(unittest.TestCase):
         self.assertEqual(p6('bbbbbbcccccccaaaaaatttttfffff'), 'b6c7a6t5f5')
     def test_p6_notCompressed(self):
         self.assertEqual(p6('bbbabcaca'), 'bbbabcaca')
+
+if __name__ == '__main__':
+    temp = input("Enter a string to compress:")
+    print(p6(temp))

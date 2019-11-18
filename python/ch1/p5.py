@@ -67,3 +67,8 @@ class TestP5(unittest.TestCase):
     def test_p5_replace(self):
         self.assertTrue(p5("pale", "bale"))
         self.assertFalse(p5("pale", "bake"))
+
+if __name__ == '__main__':
+    temp = input("Enter a string:")
+    temp2 = input("Enter another string to see if it is one edit away from the first:")
+    print(p5(temp, temp2))

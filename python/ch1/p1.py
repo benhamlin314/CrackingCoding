@@ -17,7 +17,6 @@ def p1(str):
     return True
 
 class TestP1(unittest.TestCase):
-
     def test_p1(self):
         self.assertTrue(p1("abcdefghijklmnopqrstuvwxyz"))
         self.assertFalse(p1("adapt"))
@@ -25,4 +24,5 @@ class TestP1(unittest.TestCase):
         self.assertFalse(p1("digitation"))
 
 if __name__ == '__main__':
-    unittest.main()
+    temp = input("Enter a string to see if all characters are unique:")
+    print(p1(temp))
