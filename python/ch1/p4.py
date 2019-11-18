@@ -12,6 +12,7 @@
 
 import unittest
 
+# O(N) where N is the length of str
 def p4(str):
     str = str.lower()
     str = str.replace(' ', '')

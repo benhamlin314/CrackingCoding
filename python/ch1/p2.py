@@ -8,6 +8,8 @@
 """
 import unittest
 
+# O(N) where N is the length of str1
+# O(1) when strings are not the same length
 def p2(str1, str2):
     if len(str1) == len(str2):
         for letter in str1:

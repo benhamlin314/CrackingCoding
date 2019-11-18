@@ -11,6 +11,7 @@
 """
 import unittest
 
+# O(N) where N is the length of str
 def p3(str, length):
     str = str.strip()
     str = str.replace(' ', '%20')

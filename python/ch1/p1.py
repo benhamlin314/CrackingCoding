@@ -10,6 +10,7 @@
 
 import unittest
 
+# O(N) where N is the length of str
 def p1(str):
     for letter in str:
         if str.count(letter) > 1:

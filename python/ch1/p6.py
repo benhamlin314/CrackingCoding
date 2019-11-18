@@ -12,6 +12,7 @@
 
 import unittest
 
+# O(N)
 def p6(str1):
     comp = ""
     prev_letter = str1[0]

@@ -10,6 +10,8 @@
 
 import unittest
 
+
+# O(N) where N is length of str2
 def checkInsert(str1, str2):
     for i in range(0,len(str2)):
         if str1[i] != str2[i]:
@@ -20,6 +22,7 @@ def checkInsert(str1, str2):
                 return False
     return False
 
+# O(N) where N is length of str2
 def checkReplace(str1, str2):
     for i in range(0, len(str2)):
         if str1[i] != str2[i]:
@@ -32,6 +35,7 @@ def checkReplace(str1, str2):
             break
     return False
 
+# O(N) where N is length of str2
 def checkRemove(str1, str2):
     str3 = str2[:len(str2)-1]
     if str1 == str3:
@@ -45,6 +49,7 @@ def checkRemove(str1, str2):
                 return False
     return False
 
+# O(N) where N is the longest of the length of str1 or str2
 def p5(str1, str2):
     if str1 == str2:
         return True
