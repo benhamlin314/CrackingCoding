@@ -11,7 +11,7 @@
 """
                       left                right
  1  2  3  4        4  8 12 16           13  9  5  1
- 5  6  7  8  ->    3  7 11 12    OR     14 10  6  2
+ 5  6  7  8  ->    3  7 11 15    OR     14 10  6  2
  9 10 11 12        2  6 10 14           15 11  7  3
 13 14 15 16        1  5  9 13           16 12  8  4
 
@@ -35,7 +35,8 @@ def p7(arr, dir):
 
 class TestP7(unittest.TestCase):
     def test_p7(self):
-        self.assertEqual(p7([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]], 0), "[[13 9 5 1]\n[14 10 6 2]\n[15 11 7 3]\n[16 12 8 4]]")
+        self.assertEqual(p7([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]], 0),
+         [[13, 9, 5, 1], [14, 10, 6, 2], [15, 11, 7, 3], [16, 12, 8, 4]])
 
 if __name__ == '__main__':
     temp = input("Enter an integer N for the NxN matrix representing the image:")
