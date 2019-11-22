@@ -12,7 +12,7 @@
 import unittest
 
 def isSubstring(str1, str2):
-    if str1 in str2:
+    if str2 in str1:
         return True
     return False
 
