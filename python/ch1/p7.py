@@ -25,7 +25,7 @@
 import unittest
 import numpy
 
-# O(n^2) where n is the size of the NxN matrix
+# O(n^3) where n is the size of the NxN matrix
 def p7_copy(arr, dir):
     cp = []
     for i in range(0, len(arr)):
@@ -34,12 +34,12 @@ def p7_copy(arr, dir):
             temp_arr.append(arr[j][i])
         if dir == 0:
             # rotate right
-            temp_arr.reverse()
+            temp_arr.reverse()# O(N)
             cp.append(temp_arr)
         else:
             # rotate left
             cp.append(temp_arr)
-    if dir == 1:
+    if dir == 1:# negligible in time complexity compared to the rest
         cp.reverse()
     return cp
 
