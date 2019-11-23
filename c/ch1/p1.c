@@ -7,17 +7,12 @@
  What if you cannot use additional data structures?
  DATE: 11/14/2019
 *******************************/
+#include "header.h"
 
-int length(char* str){
-  int count = 0;
-  while(str[count] != '\0'){
-    count++;
-  }
-  return count;
-}
-
-int p1(char *str){
-  int len = length(str);
+// O(n!) where n is the length of the string
+// Horribly inefficient, thinking of a more inefficient algorithm
+int p1_single_structure(char *str){
+  int len = strlen(str);
   for(int loc = 0; loc < len; ++loc{
     for(int i = 1; i < len; ++i){
       if(str[i] == str[loc]){
