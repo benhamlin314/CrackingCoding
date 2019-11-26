@@ -13,7 +13,31 @@ DATE: 11/23/2019
 #include "header.h"
 
 char* p3(char* str, int length){
-   for(int i = 0; str[i] != '\0' && i < length; ++i){
+   char* arr = (char*)malloc(length);
+   token = strtok(str, ' ');
+   while(token != NULL){
+      strcat(arr,token);
+      strcat(arr,"%20");
+      token = strtok(NULL, ' ');
+   }
+   return arr;
+}
 
+int main(int argc, char* argv[]){
+   if(argc > 1){
+      if(strcmp("-d", argv[1]) == 0 ){
+         if(strcmp(p3("Mr John Smith", 20), "Mr%20John%20Smith") == 0){
+            printf("ok");
+         }
+         else{
+            printf("Failed");
+         }
+         if(strcmp(p3("This is a string", 24), "This%20is%20a%20string") == 0){
+            printf("ok");
+         }
+         else{
+            printf("Failed");
+         }
+      }
    }
 }

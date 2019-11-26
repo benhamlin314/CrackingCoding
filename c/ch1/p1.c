@@ -10,7 +10,7 @@
 #include "header.h"
 
 // O(n!) where n is the length of the string
-// Horribly inefficient, thinking of a more inefficient algorithm
+// Horribly inefficient, thinking of a more efficient algorithm
 int p1_single_structure(char *str){
   int len = strlen(str);
   for(int loc = 0; loc < len; ++loc{
@@ -21,4 +21,29 @@ int p1_single_structure(char *str){
     }
   }
   return 1;
+}
+
+int main(int argc, char* argv[]){
+   if(argc > 1){
+      if(strcmp("-d", argv[1]) == 0 ){
+         if(p1_single_structure("adept")==1){
+            printf("ok");
+         }
+         else{
+            printf("Failed");
+         }
+         if(p1_single_structure("adapt")==0){
+            printf("ok");
+         }
+         else{
+            printf("Failed");
+         }
+         if(p1_single_structure("abcdefghijklmnopqrstuvwxyz")==1){
+            printf("ok");
+         }
+         else{
+            printf("Failed");
+         }
+      }
+   }
 }
