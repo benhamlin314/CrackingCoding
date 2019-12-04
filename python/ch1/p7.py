@@ -50,6 +50,18 @@ def p7_inplace(arr, dir):
     else:
         # rotate left
         temp_int = 0
+    return arr
+
+def p7_copy(arr, dir):
+    if dir == 0:
+        # rotate right
+        for r in range(len(arr)):
+            for c in range(len(r)):
+
+    else:
+        # rotate left
+        temp_int = 0
+    return arr
 
 class TestP7(unittest.TestCase):
     def test_p7_copy_4x4(self):
@@ -84,4 +96,5 @@ if __name__ == '__main__':
     temp2 = list(map(int, input.split()))
     temp3 = input("Enter 0 to rotate right or 1 to rotate left:")
     matrix = numpy.array(temp2).reshape(temp, temp)
-    print(p7(matrix, temp3))
+    print(p7_copy(matrix, temp3))
+    print(p7_inplace(matrix, temp3))
