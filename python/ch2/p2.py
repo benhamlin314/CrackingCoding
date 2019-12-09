@@ -14,12 +14,19 @@ class Node:
         self.data = data
         self.next = None
 
+    def dispose(self):
+        del self
+
 class LinkedList:
     def __init__(self):
         self.head = None
 
     def dispose(self):
-        del self
+        if self.head is not None:
+            temp = self.head
+            self.head = self.head.next
+            temp.dispose()
+            self.dispose()
 
     def length(self):
         cur = self.head
