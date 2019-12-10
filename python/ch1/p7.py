@@ -51,17 +51,19 @@ def p7_inplace(arr, dir):
         # rotate left
         temp_int = 0
     return arr
-
+    
+"""
 def p7_copy(arr, dir):
     if dir == 0:
         # rotate right
         for r in range(len(arr)):
             for c in range(len(r)):
-
+                pass
     else:
         # rotate left
         temp_int = 0
     return arr
+"""
 
 class TestP7(unittest.TestCase):
     def test_p7_copy_4x4(self):
