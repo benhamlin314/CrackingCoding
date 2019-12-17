@@ -10,21 +10,14 @@
 
 import unittest
 from ch4.queue import Queue
+from ch4.graph import Graph, GNode
 
-class Graph(object):
-    def __init__(self):
-        self.nodes = []
-
-    def add(self, node):
-        self.nodes.append(node)
-
-class Node(object):
+class PNode(GNode):
     def __init__(self, data):
-        self.data = data
-        self.children = []
+        super().__init__(data)
         self.discovered = False
 
-def p1(graph: Graph, S: Node, E: Node):
+def p1(graph: Graph, S: PNode, E: PNode):
     q = Queue()
     S.discovered = True
     q.enqueue(S)
@@ -46,10 +39,10 @@ class TestP1(unittest.TestCase):
         self.graph = None
 
     def test_p1(self):
-        s = Node(1)
-        a = Node(2)
-        d = Node(3)
-        e = Node(4)
+        s = PNode(1)
+        a = PNode(2)
+        d = PNode(3)
+        e = PNode(4)
         s.children.append(a)
         s.children.append(d)
         a.children.append(s)

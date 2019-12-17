@@ -18,3 +18,6 @@ class Queue(object):
         if len(self._q) == 0:
             return True
         return False
+
+    def clear(self):
+        self._q.clear()
