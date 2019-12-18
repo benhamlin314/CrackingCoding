@@ -12,22 +12,24 @@
 
 import unittest
 
+
 # O(N) where N is the length of str
 def p4(str):
     str = str.lower()
     str = str.replace(' ', '')
-    if (len(str)%2 == 0):
+    if (len(str) % 2 == 0):
         for letter in str:
-            if not (str.count(letter)%2 == 0):
+            if not (str.count(letter) % 2 == 0):
                 return False
     else:
         odd = False
         for letter in str:
-            if not (str.count(letter)%2 == 0) and odd:
+            if not (str.count(letter) % 2 == 0) and odd:
                 return False
-            elif (str.count(letter)%2 == 1) and not odd:
+            elif (str.count(letter) % 2 == 1) and not odd:
                 odd = True
     return True
+
 
 class TestP4(unittest.TestCase):
     def test_p4(self):
@@ -36,6 +38,8 @@ class TestP4(unittest.TestCase):
         self.assertFalse(p4("not permutation or  palindrome"))
         self.assertTrue(p4("poopystuffys u"))
 
+
 if __name__ == '__main__':
-    temp = input("Enter a string to see if a permutation results in a palindrome:")
+    temp = input(
+        "Enter a string to see if a permutation results in a palindrome:")
     print(p4(temp))

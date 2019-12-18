@@ -13,7 +13,7 @@ import unittest
 
 # O(N) where N is length of str2
 def checkInsert(str1, str2):
-    for i in range(0,len(str2)):
+    for i in range(0, len(str2)):
         if str1[i] != str2[i]:
             str3 = str2[:i] + str1[i] + str2[i:]
             if str1 == str3:
@@ -22,12 +22,13 @@ def checkInsert(str1, str2):
                 return False
     return False
 
+
 # O(N) where N is length of str2
 def checkReplace(str1, str2):
     for i in range(0, len(str2)):
         if str1[i] != str2[i]:
-            str4 = str2[:i] + str1[i] + str2[i+1:]
-            str3 = str1[:i] + str2[i] + str1[i+1:]
+            str4 = str2[:i] + str1[i] + str2[i + 1:]
+            str3 = str1[:i] + str2[i] + str1[i + 1:]
             if str3 == str2:
                 return True
             if str4 == str1:
@@ -35,19 +36,21 @@ def checkReplace(str1, str2):
             break
     return False
 
+
 # O(N) where N is length of str2
 def checkRemove(str1, str2):
-    str3 = str2[:len(str2)-1]
+    str3 = str2[:len(str2) - 1]
     if str1 == str3:
         return True
     for i in range(0, len(str1)):
         if str2[i] != str1[i]:
-            str4 = str2[:i] + str2[i+1:]
+            str4 = str2[:i] + str2[i + 1:]
             if str4 == str1:
                 return True
             else:
                 return False
     return False
+
 
 # O(N) where N is the longest of the length of str1 or str2
 def p5(str1, str2):
@@ -64,16 +67,21 @@ def p5(str1, str2):
             return True
     return False
 
+
 class TestP5(unittest.TestCase):
     def test_p5_insert(self):
         self.assertTrue(p5("pale", "ple"))
+
     def test_p5_remove(self):
         self.assertTrue(p5("pale", "pales"))
+
     def test_p5_replace(self):
         self.assertTrue(p5("pale", "bale"))
         self.assertFalse(p5("pale", "bake"))
 
+
 if __name__ == '__main__':
     temp = input("Enter a string:")
-    temp2 = input("Enter another string to see if it is one edit away from the first:")
+    temp2 = input(
+        "Enter another string to see if it is one edit away from the first:")
     print(p5(temp, temp2))

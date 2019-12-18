@@ -10,6 +10,7 @@
 
 import unittest
 
+
 # O(N) where N is the length of str
 def p1(str):
     for letter in str:
@@ -17,12 +18,14 @@ def p1(str):
             return False
     return True
 
+
 class TestP1(unittest.TestCase):
     def test_p1(self):
         self.assertTrue(p1("abcdefghijklmnopqrstuvwxyz"))
         self.assertFalse(p1("adapt"))
         self.assertTrue(p1("adept"))
         self.assertFalse(p1("digitation"))
+
 
 if __name__ == '__main__':
     temp = input("Enter a string to see if all characters are unique:")

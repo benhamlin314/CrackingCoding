@@ -13,3 +13,18 @@
 
 import unittest
 from ch4.btree import BTNode, BinaryTree
+
+def p10(T1: BinaryTree,T2: BinaryTree):
+    pass
+
+class TestP10(unittest.TestCase):
+    def setUp(self):
+        self.t1 = BinaryTree()
+        self.t2 = BinaryTree()
+
+    def tearDown(self):
+        self.t1 = None
+        self.t2 = None
+
+    def test_p10(self):
+        pass

@@ -13,8 +13,8 @@
 // Horribly inefficient, thinking of a more efficient algorithm
 int p1_single_structure(char *str){
   int len = strlen(str);
-  for(int loc = 0; loc < len; ++loc{
-    for(int i = 1; i < len; ++i){
+  for(int loc = 0; loc < len; ++loc){
+    for(int i = loc+1; i < len; ++i){
       if(str[i] == str[loc]){
         return 0;//returns false if same character found
       }

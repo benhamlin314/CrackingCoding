@@ -12,12 +12,13 @@
 
 import unittest
 
+
 # O(N)
 def p6(str1):
     comp = ""
     prev_letter = str1[0]
     count = 0
-    for i in range(0,len(str1)):
+    for i in range(0, len(str1)):
         cur_letter = str1[i]
         if prev_letter == cur_letter:
             count += 1
@@ -36,8 +37,10 @@ class TestP6(unittest.TestCase):
     def test_p6_compressed(self):
         self.assertEqual(p6('aabcccccaaa'), 'a2b1c5a3')
         self.assertEqual(p6('bbbbbbcccccccaaaaaatttttfffff'), 'b6c7a6t5f5')
+
     def test_p6_notCompressed(self):
         self.assertEqual(p6('bbbabcaca'), 'bbbabcaca')
+
 
 if __name__ == '__main__':
     temp = input("Enter a string to compress:")
