@@ -10,7 +10,7 @@
 */
 import java.util.Arrays;
 
-public class P5{
+public class P5Ch1{
   /**
   * finds the index of the first difference between s1 and s2
   * @param s1 String to be checked against

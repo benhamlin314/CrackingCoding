@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collection;
 
-public class P4 {
+public class P4Ch1{
   /**
   * Checks if the given string is a permutation of a palindrome
   * @param s1 String to be checked

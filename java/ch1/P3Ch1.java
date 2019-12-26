@@ -10,7 +10,7 @@
  * @author Benjamin Hamlin
  * @version "1.0, 12/19/2019"
  */
-public class P3{
+public class P3Ch1{
   /**
   * Replaces spaces with '%20' for urls
   * @param s1 char array to be altered

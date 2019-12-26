@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collection;
 
-public class P2{
+public class P2Ch1{
   /**
   * Determines if string 2 is a permutation of string 1
   * @param s1 The string to be checked against

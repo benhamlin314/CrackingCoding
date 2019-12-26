@@ -19,7 +19,7 @@
 * @author Benjamin Hamlin
 * @version "1.0, 12/23/2019"
 */
-public class P7{
+public class P7Ch1{
   /**
   * Rotates the given 2d array
   * @param arr array to be rotated

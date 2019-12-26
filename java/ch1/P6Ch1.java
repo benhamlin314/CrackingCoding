@@ -12,7 +12,7 @@
 */
 import java.util.*;
 
-public class P6{
+public class P6Ch1{
   /**
   * Compresses a string by putting the character followed by the integer its repeated
   * @param str String to be compressed

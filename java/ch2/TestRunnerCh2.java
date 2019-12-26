@@ -4,9 +4,9 @@ import org.junit.runner.notification.Failure;
 
 
 
-public class TestRunner{
+public class TestRunnerCh2{
   public static void main(String[] args){
-    Result result = JUnitCore.runClasses(Tests.class);
+    Result result = JUnitCore.runClasses(TestsCh2.class);
 
     for(Failure failure: result.getFailures()){
       System.out.println(failure.toString());
