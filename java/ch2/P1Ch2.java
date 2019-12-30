@@ -1,6 +1,9 @@
+import java.util.LinkedList;
+import java.util.ListIterator;
 /**
  * Chapter 2 Question 1
  * "Remove Dups"
+ * <p>
  * PROMPT:
  * Write code to remove duplicates form an unsorted linked list.
  * FOLLOW UP
@@ -9,9 +12,6 @@
  * @author Benjamin Hamlin
  * @version "1.0, 12/26/2019"
  */
-import java.util.LinkedList;
-import java.util.ListIterator;
-
 public class P1Ch2{
   /**
   * Removes duplicates from an unsorted linked list
