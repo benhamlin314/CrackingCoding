@@ -1,3 +1,5 @@
+package ch1;
+
 /**
 * Chapter 1 Question 7
 * "Rotate Matrix"

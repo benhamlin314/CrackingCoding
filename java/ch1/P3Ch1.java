@@ -1,3 +1,5 @@
+package ch1;
+
 /**
  * Chapter 1 Question 3
  * "URLify"
@@ -10,6 +12,8 @@
  * @author Benjamin Hamlin
  * @version "1.0, 12/19/2019"
  */
+
+
 public class P3Ch1{
   /**
   * Replaces spaces with '%20' for urls

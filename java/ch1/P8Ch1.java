@@ -1,3 +1,9 @@
+package ch1;
+
+import java.util.Map;
+import java.util.HashMap;
+import java.util.LinkedList;
+
 /**
 * Chapter 1 Question 8
 * "Zero Matrix"
@@ -8,9 +14,7 @@
 * @author Benjamin Hamlin
 * @version "1.0, 12/23/2019"
 */
-import java.util.Map;
-import java.util.HashMap;
-import java.util.LinkedList;
+
 
 public class P8Ch1{
   /**

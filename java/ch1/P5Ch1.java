@@ -1,3 +1,7 @@
+package ch1;
+
+import java.util.Arrays;
+
 /**
 * Chapter 1 Question 5
 * "One Away"
@@ -8,7 +12,7 @@
 * @author Benjamin Hamlin
 * @version "1.0, 12/22/2019"
 */
-import java.util.Arrays;
+
 
 public class P5Ch1{
   /**

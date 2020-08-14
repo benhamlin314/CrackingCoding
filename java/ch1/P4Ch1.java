@@ -1,3 +1,9 @@
+package ch1;
+
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Collection;
+
 /**
 * Chapter 1 Question 4
 * "Palindrome Permutation"
@@ -11,9 +17,6 @@
 * @author Benjamin Hamlin
 * @version "1.0, 12/19/2019"
 */
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Collection;
 
 public class P4Ch1{
   /**

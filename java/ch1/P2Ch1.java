@@ -1,3 +1,9 @@
+package ch1;
+
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Collection;
+
 /**
  * Chapter 1 Question 2
  * "Check Permutation"
@@ -7,9 +13,7 @@
  * @author Benjamin Hamlin
  * @version "1.0, 12/18/2019"
  */
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Collection;
+
 
 public class P2Ch1{
   /**

@@ -1,3 +1,5 @@
+package ch1;
+
 /**
  * Chapter 1 Question 1
  * "Is Unique"
@@ -8,6 +10,8 @@
  * @author Benjamin Hamlin
  * @version "1.0, 12/18/2019"
  */
+
+ 
 public class P1Ch1{
   /**
   * Determines if a string has all unique characters

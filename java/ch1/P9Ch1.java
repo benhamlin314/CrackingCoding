@@ -1,3 +1,5 @@
+package ch1;
+
 /**
 * Chapter 1 Question 9
 * "String Rotation"
@@ -9,6 +11,8 @@
 * @author Benjamin Hamlin
 * @version "1.0, 12/23/2019"
 */
+
+
 public class P9Ch1{
   /**
   * Checks if s2 is a rotation of s1

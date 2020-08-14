@@ -1,3 +1,7 @@
+package ch1;
+
+import java.util.*;
+
 /**
 * Chapter 1 Question 6
 * "String Compression"
@@ -10,7 +14,7 @@
 * @author Benjamin Hamlin
 * @version "1.0, 12/23/2019"
 */
-import java.util.*;
+
 
 public class P6Ch1{
   /**
