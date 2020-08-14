@@ -10,11 +10,12 @@
 """
 
 import unittest
+from ch4.btree import BTNode, BinaryTree
 
 def p9(tree: BinaryTree):
     ans = []
     arr = []
-    
+
 
 class TestP9(unittest.TestCase):
     def setUp(self):

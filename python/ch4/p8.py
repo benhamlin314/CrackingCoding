@@ -16,7 +16,7 @@
 """
 
 import unittest
-from ch4.btree import BTNode.root, BinaryTree
+from ch4.btree import BTNode, BinaryTree
 
 class BTPNode(BTNode):
     def __init__(self, data):

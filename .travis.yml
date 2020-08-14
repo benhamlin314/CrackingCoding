@@ -1,0 +1,7 @@
+matrix:
+  include:
+    -language: python
+    python:
+      - "3.8"
+    script:
+      - python3 -m unittest discover -s python -p "p*.py" -v
