@@ -1,10 +1,11 @@
-matrix:
+jobs:
   include:
     - language: python
       python:
         - "3.8"
       script:
         - python3 -m unittest discover -s python -p "p*.py" -v
+   exclude:
     - language: java
       script:
         - cd java/ch1
