@@ -5,7 +5,7 @@ matrix:
         - "3.8"
       script:
         - python3 -m unittest discover -s python -p "p*.py" -v
-   exclude:
+  exclude:
     - language: java
       script:
         - cd java/ch1
