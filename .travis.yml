@@ -1,12 +1,12 @@
 matrix:
   include:
     - language: python
-    python:
-      - "3.8"
-    script:
-      - python3 -m unittest discover -s python -p "p*.py" -v
+      python:
+        - "3.8"
+      script:
+        - python3 -m unittest discover -s python -p "p*.py" -v
     - language: java
-    script:
-      - cd java/ch1
-      - javac *.java
-      - java TestRunnerCh1
+      script:
+        - cd java/ch1
+        - javac *.java
+        - java TestRunnerCh1
