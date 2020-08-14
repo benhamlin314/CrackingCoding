@@ -2,7 +2,7 @@ import org.junit.Test;
 import org.junit.Ignore;
 import static org.junit.Assert.*;
 
-public class Tests{
+public class TestsCh1{
 
   @Test
   public void test_p1_true(){
