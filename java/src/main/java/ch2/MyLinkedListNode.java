@@ -1,3 +1,4 @@
+package ch2;
 /**
 * Implementation of LinkedList for this problem
 * @author Benjamin Hamlin

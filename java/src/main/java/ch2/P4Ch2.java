@@ -1,3 +1,5 @@
+package ch2;
+
 import java.util.LinkedList;
 import java.util.ListIterator;
 
@@ -13,16 +15,16 @@ import java.util.ListIterator;
  * @author Benjamin Hamlin
  * @version "1.0, 12/27/2019"
  */
-public class P4Ch2<T>{
+public class P4Ch2{
   /**
   * Partitions a linkedlist around a given value
   * @param list LinkedList to be partitioned
   * @param x value to be partitioned on
   * @return partitioned list
   */
-  public LinkedList<T> p4(LinkedList<T> list, T x){
-    ListIterator<T> li = list.ListIterator();
-    T temp;
+  public LinkedList<Integer> p4(LinkedList<Integer> list, int x){
+    ListIterator<Integer> li = list.listIterator();
+    int temp;
     while(li.hasNext()){
       temp = li.next();
       if(temp < x){

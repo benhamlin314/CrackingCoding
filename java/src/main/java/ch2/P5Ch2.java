@@ -1,3 +1,5 @@
+package ch2;
+
 import java.util.LinkedList;
 import java.util.ListIterator;
 
@@ -25,12 +27,12 @@ public class P5Ch2{
   * @param num2
   * @return sum of the two numbers
   */
-  public LinkedList<int> p5(LinkedList<int> num1, LinkedList<int> num2){
-    LinkedList<int> sum = new LinkedList<int>();
-    int carry = 0;
-    int temp = 0;
-    ListIterator<int> li = num1.listIterator();
-    ListIterator<int> li2 = num2.listIterator();
+  public LinkedList<Integer> p5(LinkedList<Integer> num1, LinkedList<Integer> num2){
+    LinkedList<Integer> sum = new LinkedList<Integer>();
+    Integer carry = 0;
+    Integer temp = 0;
+    ListIterator<Integer> li = num1.listIterator();
+    ListIterator<Integer> li2 = num2.listIterator();
     while(li.hasNext() || li2.hasNext()){
       if(li.hasNext() && li2.hasNext()){
         temp = li.next() + li2.next() + carry;

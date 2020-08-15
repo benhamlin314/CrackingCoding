@@ -5,9 +5,9 @@ matrix:
         - "3.8"
       script:
         - python3 -m unittest discover -s python -p "p*.py" -v
-  exclude:
     - language: java
+      install:
+         - cd java
+         - gradle assemble
       script:
-        - cd java/ch1
-        - javac *.java
-        - java TestRunnerCh1
+         - gradle check
