@@ -16,7 +16,7 @@ matrix:
       compiler:
          - gcc
       before-install:
-         - sudo apt-get install cmocka
+         - sudo apt-get install libcmocka0 libcmocka-dev
       script:
          - cd c/ch1
          - gcc -c *.c
