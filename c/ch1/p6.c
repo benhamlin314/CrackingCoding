@@ -30,17 +30,3 @@ char* p6(char* s){
     ++i;
   }
 }
-/*
-int main(int argc, char* argv[]){
-  if(argc > 1){
-    if(strcmp("-d", argv[1]) == 0 ){
-      if(strcmp(p6("aabcccccaaa"),"a2b1c5a3")==0){
-        printf("ok");
-      }
-      else{
-        printf("Failed");
-      }
-    }
-  }
-}
-*/

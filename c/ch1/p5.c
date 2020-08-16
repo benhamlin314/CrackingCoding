@@ -70,33 +70,3 @@ int p5(char* s1, char* s2){
     return removeChar(s1, s2, loc);
   }
 }
-
-/*
-int main(int argc, char* argv[]){
-  if(argc > 1){
-    if(strcmp("-d", argv[1]) == 0 ){
-      //tests remove
-      if(p5("chicken","chickens")==1){
-        printf("ok");
-      }
-      else{
-        printf("Failed");
-      }
-      //test insert
-      if(p5("chickens", "chicken")==1){
-        printf("ok");
-      }
-      else{
-        printf("Failed");
-      }
-      //test replaceChar
-      if(p5("chicken", "chickon")==1){
-        printf("ok");
-      }
-      else{
-        printf("Failed");
-      }
-    }
-  }
-}
-*/
