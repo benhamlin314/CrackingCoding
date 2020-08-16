@@ -30,7 +30,7 @@ char* p6(char* s){
     ++i;
   }
 }
-
+/*
 int main(int argc, char* argv[]){
   if(argc > 1){
     if(strcmp("-d", argv[1]) == 0 ){
@@ -43,3 +43,4 @@ int main(int argc, char* argv[]){
     }
   }
 }
+*/

@@ -1,3 +1,4 @@
+os: linux
 matrix:
   include:
     - language: python
@@ -11,3 +12,13 @@ matrix:
          - gradle assemble
       script:
          - gradle check
+    - language: c
+      compiler:
+         - gcc
+      before-install:
+         - sudo apt-get install cmocka
+      script:
+         - cd c/ch1
+         - gcc -c *.c
+         - gcc -o "testmain" ./*.o -lcmocka
+         - ./testmain
