@@ -16,8 +16,8 @@ static void test_p2(){
 }
 
 static void test_p3(){
-  assert_string_equal(p3("Mr John Smith", 20), "Mr%20John%20Smith");
-  assert_string_equal(p3("This is a string", 24), "This%20is%20a%20string");
+  assert_string_equal(p3("Mr John Smith", 30), "Mr%20John%20Smith");
+  assert_string_equal(p3("This is a string", 30), "This%20is%20a%20string");
 }
 
 static void test_p4(){
