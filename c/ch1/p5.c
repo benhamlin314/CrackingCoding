@@ -27,7 +27,8 @@ int insertChar(char* s1, char* s2, int loc){
 int removeChar(char* s1, char* s2, int loc){
   char* temp = (char*)malloc(strlent(s1)+1);
   strncpy(temp, s2, loc-1);
-  for(int i = loc+1; s2[i] != '\0'; ++i){
+  int i = 0;
+  for(i = loc+1; s2[i] != '\0'; ++i){
     temp[i] = s2[i];
   }
   temp[i] = '\0';

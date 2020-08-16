@@ -34,7 +34,7 @@ void zero(int** matrix, int row, int col, int m, int n){
     matrix[row][i] = 0;
   }
   for(int j = 0; j < m; j++){
-    matrix[i][col] = 0;
+    matrix[j][col] = 0;
   }
 }
 

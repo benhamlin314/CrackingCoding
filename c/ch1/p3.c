@@ -14,7 +14,7 @@ DATE: 11/23/2019
 
 char* p3(char* str, int length){
    char* arr = (char*)malloc(length);
-   token = strtok(str, ' ');
+   char* token = strtok(str, ' ');
    while(token != NULL){
       strcat(arr,token);
       strcat(arr,"%20");

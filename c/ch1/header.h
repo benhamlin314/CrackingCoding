@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include <ctype.h>
 
 typedef struct zeroNode{
@@ -20,10 +21,10 @@ int replaceChar(char* s1, char* s2, int loc);
 int diffLocation(char* s1, char* s2);
 int p5(char* s1, char* s2);
 char* p6(char* s);
-int[][] p7(int[][] matrix);
-ZeroNode* findZeros(int[][] matrix, int m, int n);
+int** p7(int** matrix);
+ZeroNode* findZeros(int** matrix, int m, int n);
 void zero(int** matrix, int row, int col, int m, int n);
-int[][] p8(int[][] matrix, int m, int n);
+int** p8(int** matrix, int m, int n);
 int isSubstring(char* str1, char* str2);
 int p9(char* s1, char* s2);
 
