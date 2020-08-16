@@ -21,6 +21,6 @@ left                right
   21 22 23 24 25      1  6 11 16 21       25 20 15 10  5
 */
 
-int[][] p7(int[][] matrix){
-  
+int** p7(int** matrix){
+
 }

@@ -13,7 +13,7 @@ typedef struct zeroNode{
   int col;
 }ZeroNode;
 
-ZeroNode* findZeros(int[][] matrix, int m, int n){
+ZeroNode* findZeros(int** matrix, int m, int n){
   ZeroNode* array = (ZeroNode*)malloc(sizeof(ZeroNode)*(m*n));//accounts for all
   int count = 0;
   for(int i = 0; i < m; i++){
@@ -38,7 +38,7 @@ void zero(int** matrix, int row, int col, int m, int n){
   }
 }
 
-int[][] p8(int[][] matrix, int m, int n){
+int** p8(int** matrix, int m, int n){
   ZeroNode* arr = findZeros(matrix, m, n);
   for(int i = 0; i < (m*n) && arr[i].row != -1; i++){
     zero(matrix, arr[i].row, arr[i].col, m, n);
