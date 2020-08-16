@@ -22,28 +22,3 @@ int p1_single_structure(char *str){
   }
   return 1;
 }
-
-int main(int argc, char* argv[]){
-   if(argc > 1){
-      if(strcmp("-d", argv[1]) == 0 ){
-         if(p1_single_structure("adept")==1){
-            printf("ok");
-         }
-         else{
-            printf("Failed");
-         }
-         if(p1_single_structure("adapt")==0){
-            printf("ok");
-         }
-         else{
-            printf("Failed");
-         }
-         if(p1_single_structure("abcdefghijklmnopqrstuvwxyz")==1){
-            printf("ok");
-         }
-         else{
-            printf("Failed");
-         }
-      }
-   }
-}

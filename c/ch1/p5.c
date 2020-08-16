@@ -14,7 +14,8 @@ int insertChar(char* s1, char* s2, int loc){
   char* temp = (char*)malloc(strlen(s1)+1);
   strncpy(temp, s2, loc-1);
   temp[loc] = s1[loc];
-  for(int i = loc; s2[i] != '\0'; ++i){
+  int i = 0;
+  for(i = loc; s2[i] != '\0'; ++i){
     temp[i] = s2[i];
   }
   temp[i] = '\0';
@@ -25,9 +26,10 @@ int insertChar(char* s1, char* s2, int loc){
 }
 
 int removeChar(char* s1, char* s2, int loc){
-  char* temp = (char*)malloc(strlent(s1)+1);
+  char* temp = (char*)malloc(strlen(s1)+1);
   strncpy(temp, s2, loc-1);
-  for(int i = loc+1; s2[i] != '\0'; ++i){
+  int i = 0;
+  for(i = loc+1; s2[i] != '\0'; ++i){
     temp[i] = s2[i];
   }
   temp[i] = '\0';
@@ -66,33 +68,5 @@ int p5(char* s1, char* s2){
   }
   else{
     return removeChar(s1, s2, loc);
-  }
-}
-
-int main(int argc, char* argv[]){
-  if(argc > 1){
-    if(strcmp("-d", argv[1]) == 0 ){
-      //tests remove
-      if(p5("chicken","chickens")==1){
-        printf("ok");
-      }
-      else{
-        printf("Failed");
-      }
-      //test insert
-      if(p5("chickens", "chicken")==1){
-        printf("ok");
-      }
-      else{
-        printf("Failed");
-      }
-      //test replaceChar
-      if(p5("chicken", "chickon")==1){
-        printf("ok");
-      }
-      else{
-        printf("Failed");
-      }
-    }
   }
 }

@@ -9,9 +9,11 @@ call to isSubstring (e.g., "waterbottle" is a rotation of "erbottlewat")
 DATE: 12/4/2019
 */
 
+#include "header.h"
+
 int isSubstring(char* str1, char* str2){
   char * temp = strstr(str1, str2);
-  if(temp == null){
+  if(temp == 0){
     return 1;
   }
   return 0;

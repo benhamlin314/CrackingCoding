@@ -8,12 +8,9 @@ and column are set to 0.
 DATE: 12/3/2019
 */
 
-typedef struct zeroNode{
-  int row;
-  int col;
-}ZeroNode;
+#include "header.h"
 
-ZeroNode* findZeros(int[][] matrix, int m, int n){
+ZeroNode* findZeros(int** matrix, int m, int n){
   ZeroNode* array = (ZeroNode*)malloc(sizeof(ZeroNode)*(m*n));//accounts for all
   int count = 0;
   for(int i = 0; i < m; i++){
@@ -34,11 +31,11 @@ void zero(int** matrix, int row, int col, int m, int n){
     matrix[row][i] = 0;
   }
   for(int j = 0; j < m; j++){
-    matrix[i][col] = 0;
+    matrix[j][col] = 0;
   }
 }
 
-int[][] p8(int[][] matrix, int m, int n){
+int** p8(int** matrix, int m, int n){
   ZeroNode* arr = findZeros(matrix, m, n);
   for(int i = 0; i < (m*n) && arr[i].row != -1; i++){
     zero(matrix, arr[i].row, arr[i].col, m, n);

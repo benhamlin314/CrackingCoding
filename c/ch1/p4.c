@@ -32,28 +32,3 @@ int p4(char* str){
    }
    return 1;
 }
-
-int main(int argc, char* argv[]){
-   if(argc > 1){
-      if(strcmp("-d", argv[1]) == 0 ){
-         if(p4("Taco cat") == 0){
-            printf("ok");
-         }
-         else{
-            printf("Failed");
-         }
-         if(p4("race car") == 0){
-            printf("ok");
-         }
-         else{
-            printf("Failed");
-         }
-         if(p4("taco$ cat") == 0){
-            printf("ok");
-         }
-         else{
-            printf("Failed");
-         }
-      }
-   }
-}
