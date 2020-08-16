@@ -20,5 +20,7 @@ char* p3(char* str, int length){
       strcat(arr,"%20");
       token = strtok(NULL, ' ');
    }
-   return arr;
+   strcpy(str, arr);
+   free(arr);
+   return str;
 }
