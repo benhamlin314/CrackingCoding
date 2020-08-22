@@ -14,13 +14,23 @@ DATE: 11/23/2019
 
 char* p3(char* str, int length){
    char* arr = (char*)malloc(length);
-   char* token = strtok(str, ' ');
+   char* token = strtok(str, " ");
    while(token != NULL){
       strcat(arr,token);
       strcat(arr,"%20");
-      token = strtok(NULL, ' ');
+      token = strtok(NULL, " ");
    }
    strcpy(str, arr);
    free(arr);
    return str;
+}
+
+int main(int argc, char const *argv[]) {
+  char * string = (char *)malloc(sizeof(char) * 50);
+  strcpy(string, "Mr John Smith");
+  char * temp;
+  temp = p3(string, 50);
+  printf("%s\n", temp);
+  free(string);
+  return 0;
 }

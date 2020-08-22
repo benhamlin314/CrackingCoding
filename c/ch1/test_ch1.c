@@ -51,7 +51,7 @@ int main(int argc, char **argv){
   const UnitTest tests[] = {
     unit_test(test_p1),
     unit_test(test_p2),
-    //unit_test(test_p3),
+    unit_test(test_p3),
     //unit_test(test_p4),
     //unit_test(test_p5),
     //unit_test(test_p6)
