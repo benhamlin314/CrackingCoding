@@ -13,23 +13,43 @@ DATE: 11/23/2019
 #include "header.h"
 
 char* p3(char* str, int length){
-   char* arr = (char*)malloc(sizeof(char) * length);
-   char* token = strtok(str, " ");
-   while(token != NULL && token != 0){
-      strcat(arr,token);
-      token = strtok(NULL, " ");
-      if(token != NULL){
-        strcat(arr,"%20");
+  for(int i = 0; i < length || str[i] != '\0'; i++){
+    if(str[i] == ' '){
+      char temp1, temp2, temp3, temp4;
+      str[i++] = '%';
+      temp1 = str[i];
+      str[i++] = '2';
+      temp2 = str[i];
+      str[i++] = '0';
+      for(int j = i; j < length || str[j] != '\0'; j+=2){
+        temp3 = str[j];
+        temp4 = str[j+1];
+        str[j] = temp1;
+        str[j+1] = temp2;
+        temp1 = temp3;
+        temp2 = temp4;
       }
-   }
-   strcpy(str, arr);
-   free(arr);
-   return str;
+    }
+  }
+  return str;
+   // char* arr = (char*)malloc(sizeof(char) * length);
+   // char* token = strtok(str, " ");
+   // while(token != NULL && token != 0){
+   //    strcat(arr,token);
+   //    token = strtok(NULL, " ");
+   //    if(token != NULL){
+   //      strcat(arr,"%20");
+   //    }
+   // }
+   // strcpy(str, arr);
+   // free(arr);
+   // return str;
 }
 
 // int main(int argc, char const *argv[]) {
 //   char * string = (char *)malloc(sizeof(char) * 18);
 //   strcpy(string, "Mr John Smith");
+//   printf("%i\n", strlen(string));
 //   char * temp;
 //   temp = p3(string, 18);
 //   printf("%s\n", temp);
