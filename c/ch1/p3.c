@@ -13,12 +13,14 @@ DATE: 11/23/2019
 #include "header.h"
 
 char* p3(char* str, int length){
-   char* arr = (char*)malloc(length);
+   char* arr = (char*)malloc(sizeof(char) * length);
    char* token = strtok(str, " ");
-   while(token != NULL){
+   while(token != NULL && token != 0){
       strcat(arr,token);
-      strcat(arr,"%20");
       token = strtok(NULL, " ");
+      if(token != NULL){
+        strcat(arr,"%20");
+      }
    }
    strcpy(str, arr);
    free(arr);
@@ -26,10 +28,10 @@ char* p3(char* str, int length){
 }
 
 // int main(int argc, char const *argv[]) {
-//   char * string = (char *)malloc(sizeof(char) * 50);
+//   char * string = (char *)malloc(sizeof(char) * 18);
 //   strcpy(string, "Mr John Smith");
 //   char * temp;
-//   temp = p3(string, 50);
+//   temp = p3(string, 18);
 //   printf("%s\n", temp);
 //   free(string);
 //   return 0;
