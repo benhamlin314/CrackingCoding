@@ -25,12 +25,12 @@ char* p3(char* str, int length){
    return str;
 }
 
-int main(int argc, char const *argv[]) {
-  char * string = (char *)malloc(sizeof(char) * 50);
-  strcpy(string, "Mr John Smith");
-  char * temp;
-  temp = p3(string, 50);
-  printf("%s\n", temp);
-  free(string);
-  return 0;
-}
+// int main(int argc, char const *argv[]) {
+//   char * string = (char *)malloc(sizeof(char) * 50);
+//   strcpy(string, "Mr John Smith");
+//   char * temp;
+//   temp = p3(string, 50);
+//   printf("%s\n", temp);
+//   free(string);
+//   return 0;
+// }
