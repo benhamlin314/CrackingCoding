@@ -16,8 +16,14 @@ static void test_p2(){
 }
 
 static void test_p3(){
-  assert_string_equal(p3("Mr John Smith", 18), "Mr%20John%20Smith");
-  //assert_string_equal(p3("This is a string", 22), "This%20is%20a%20string");
+  char * test1 = (char *) malloc(sizeof(char) * 18);
+  strcpy(test1, "Mr John Smith");
+  char * test2 = (char *) malloc(sizeof(char) * 22);
+  strcpy(test2, "This is a stringh");
+  assert_string_equal(p3(test1, 18), "Mr%20John%20Smith");
+  assert_string_equal(p3(test2, 22), "This%20is%20a%20string");
+  free(test1);
+  free(test2);
 }
 
 static void test_p4(){
