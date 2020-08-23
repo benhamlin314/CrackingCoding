@@ -11,8 +11,8 @@ DATE: 11/24/2019
 #include "header.h"
 
 int insertChar(char* s1, char* s2, int loc){
-  char* temp = (char*)malloc(strlen(s1)+1);
-  strncpy(temp, s2, loc);
+  char* temp = (char*)malloc(sizeof(char) * (strlen(s1)+1));
+  strncpy(temp, s2, loc-1);
   temp[loc] = s1[loc];
   int i = 0;
   for(i = loc; s2[i] != '\0'; ++i){
@@ -28,13 +28,13 @@ int insertChar(char* s1, char* s2, int loc){
 }
 
 int removeChar(char* s1, char* s2, int loc){
-  char* temp = (char*)malloc(strlen(s1)+1);
-  strncpy(temp, s2, loc);
+  char* temp = (char*)malloc(sizeof(char) * (strlen(s1)+1));
+  strncpy(temp, s2, loc-1);
   int i = 0;
   for(i = loc+1; s2[i] != '\0'; ++i){
-    temp[i] = s2[i];
+    temp[i-1] = s2[i];
   }
-  temp[i] = '\0';
+  temp[i-1] = '\0';
   if(strcmp(temp, s1) == 0){
     free(temp);
     return 1;
