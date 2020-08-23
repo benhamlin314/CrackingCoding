@@ -32,25 +32,43 @@ static void test_p4(){
 }
 
 static void test_p5(){
-  assert_int_equal(p5("chicken","chickens"), 1);
-  assert_int_equal(p5("chickens", "chicken"), 1);
-  assert_int_equal(p5("chicken", "chickon"), 1);
+  char * chicken = (char *)malloc(sizeof(char) * 8);
+  strcpy(chicken, "chicken");
+  char * chickens = (char *)malloc(sizeof(char) * 8);
+  strcpy(chickens, "chickens");
+  char * chickon = (char *)malloc(sizeof(char) * 8);
+  strcpy(chickon, "chickon");
+  assert_int_equal(p5(chicken,chickens), 1);
+  assert_int_equal(p5(chickens, chicken), 1);
+  assert_int_equal(p5(chicken, chickon), 1);
+  free(chicken);
+  free(chickens);
+  free(chickon);
 }
 
 static void test_p6(){
-  assert_string_equal(p6("aabcccccaaa"),"a2b1c5a3");
+  char * temp = p6("aabcccccaaa");
+  assert_string_equal(temp,"a2b1c5a3");
+  free(temp);
 }
 
 static void test_p7(){
-
+  //TODO: add matrix test
+  assert_int_equal(0, 0);
 }
 
 static void test_p8(){
-
+  //TODO: add matrix test
 }
 
 static void test_p9(){
-
+  char * test1 = (char *)malloc(sizeof(char) * );
+  strcpy(test1, "waterbottle");
+  char * test2 = (char *)malloc(sizeof(char) * );
+  strcpy(test2, "erbottlewat");
+  assert_int_equal(p9(test1,test2), 1);
+  free(test1);
+  free(test2);
 }
 
 int main(int argc, char **argv){
@@ -58,9 +76,12 @@ int main(int argc, char **argv){
     unit_test(test_p1),
     unit_test(test_p2),
     unit_test(test_p3),
-    //unit_test(test_p4),
+    unit_test(test_p4),
     //unit_test(test_p5),
-    //unit_test(test_p6)
+    unit_test(test_p6),
+    unit_test(test_p7),
+    unit_test(test_p8),
+    unit_test(test_p9)
   };
   return run_tests(tests);
 }

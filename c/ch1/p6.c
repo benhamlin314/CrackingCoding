@@ -29,4 +29,5 @@ char* p6(char* s){
     }
     ++i;
   }
+  return comp;
 }
