@@ -56,7 +56,7 @@ int replaceChar(char* s1, char* s2, int loc){
 //finds the index of the first difference in the string
 int diffLocation(char* s1, char* s2){
   int i = 0;
-  while(s1[i] != s2[i]){
+  while(s1[i] == s2[i]){
     i++;
   }
   return i;
