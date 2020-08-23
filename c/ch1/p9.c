@@ -20,7 +20,7 @@ int isSubstring(char* str1, char* str2){
 }
 
 int p9(char* s1, char* s2){
-  char* temp = (char*)malloc(strlen(s1)*2+1);
+  char* temp = (char*)malloc(sizeof(char) * (strlen(s1)*2+1));
   strcat(temp, s1);
   strcat(temp, s1);
   if(isSubstring(temp, s2)){

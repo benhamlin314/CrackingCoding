@@ -27,8 +27,8 @@ int p4(char* str){
       if(alpha[i]%2 != 0 && flag == 0){
          flag = 1;
       }else if(alpha[i]%2 != 0 && flag != 0){
-         return 0;
+         return 1;
       }
    }
-   return 1;
+   return 0;
 }

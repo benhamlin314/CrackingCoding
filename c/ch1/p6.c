@@ -24,7 +24,7 @@ char* p6(char* s){
     else{
       strcat(comp, temp);
       strcat(comp, count);
-      count = 0;
+      count = 1;
       temp = s[i];
     }
     ++i;
