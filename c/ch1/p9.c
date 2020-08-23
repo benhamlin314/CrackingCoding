@@ -24,7 +24,9 @@ int p9(char* s1, char* s2){
   strcat(temp, s1);
   strcat(temp, s1);
   if(isSubstring(temp, s2)){
+    free(temp);
     return 1;
   }
+  free(temp);
   return 0;
 }

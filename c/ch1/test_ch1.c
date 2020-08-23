@@ -62,9 +62,9 @@ static void test_p8(){
 }
 
 static void test_p9(){
-  char * test1 = (char *)malloc(sizeof(char) * );
+  char * test1 = (char *)malloc(sizeof(char) * 11);
   strcpy(test1, "waterbottle");
-  char * test2 = (char *)malloc(sizeof(char) * );
+  char * test2 = (char *)malloc(sizeof(char) * 11);
   strcpy(test2, "erbottlewat");
   assert_int_equal(p9(test1,test2), 1);
   free(test1);
