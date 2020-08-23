@@ -12,7 +12,7 @@ DATE: 11/24/2019
 
 int insertChar(char* s1, char* s2, int loc){
   char* temp = (char*)malloc(strlen(s1)+1);
-  strncpy(temp, s2, loc-1);
+  strncpy(temp, s2, loc);
   temp[loc] = s1[loc];
   int i = 0;
   for(i = loc; s2[i] != '\0'; ++i){
@@ -29,7 +29,7 @@ int insertChar(char* s1, char* s2, int loc){
 
 int removeChar(char* s1, char* s2, int loc){
   char* temp = (char*)malloc(strlen(s1)+1);
-  strncpy(temp, s2, loc-1);
+  strncpy(temp, s2, loc);
   int i = 0;
   for(i = loc+1; s2[i] != '\0'; ++i){
     temp[i] = s2[i];
