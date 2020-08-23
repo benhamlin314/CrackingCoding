@@ -13,7 +13,7 @@ DATE: 12/4/2019
 
 int isSubstring(char* str1, char* str2){
   char * temp = strstr(str1, str2);
-  if(temp == 0){
+  if(temp == NULL){
     return 1;
   }
   return 0;

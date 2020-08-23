@@ -78,7 +78,7 @@ int main(int argc, char **argv){
     unit_test(test_p2),
     unit_test(test_p3),
     unit_test(test_p4),
-    //unit_test(test_p5),
+    unit_test(test_p5),
     unit_test(test_p6),
     unit_test(test_p7),
     unit_test(test_p8),

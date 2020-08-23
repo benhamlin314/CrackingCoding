@@ -31,6 +31,7 @@ char* p6(char* s){
   }
   if(i < strlen(s)){
     strcpy(s, comp);
+    s[i] = '\0';
   }
   free(comp);
   return s;
