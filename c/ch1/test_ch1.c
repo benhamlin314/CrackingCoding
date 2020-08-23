@@ -32,11 +32,11 @@ static void test_p4(){
 }
 
 static void test_p5(){
-  char * chicken = (char *)malloc(sizeof(char) * 8);
+  char * chicken = (char *)malloc(sizeof(char) * 9);
   strcpy(chicken, "chicken");
-  char * chickens = (char *)malloc(sizeof(char) * 8);
+  char * chickens = (char *)malloc(sizeof(char) * 9);
   strcpy(chickens, "chickens");
-  char * chickon = (char *)malloc(sizeof(char) * 8);
+  char * chickon = (char *)malloc(sizeof(char) * 9);
   strcpy(chickon, "chickon");
   assert_int_equal(p5(chicken,chickens), 1);
   assert_int_equal(p5(chickens, chicken), 1);
