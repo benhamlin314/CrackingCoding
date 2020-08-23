@@ -13,11 +13,11 @@ DATE: 12/2/2019
 #include "header.h"
 
 char* p6(char* s){
-  char * comp = (char*)malloc(strlen(s));
+  char * comp = (char*)malloc(sizeof(char) * strlen(s));
   int count = 0;
   int i = 0;
   char temp = s[i];
-  while(s[i] != '\0'){
+  while(i < strlen(s) && s[i] != '\0'){
     if(s[i] == temp){
       count++;
     }
@@ -29,5 +29,9 @@ char* p6(char* s){
     }
     ++i;
   }
-  return comp;
+  if(i < strlen(s)){
+    strcpy(s, comp);
+  }
+  free(comp);
+  return s;
 }

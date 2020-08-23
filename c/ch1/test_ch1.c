@@ -47,9 +47,10 @@ static void test_p5(){
 }
 
 static void test_p6(){
-  char * temp = p6("aabcccccaaa");
-  assert_string_equal(temp,"a2b1c5a3");
-  free(temp);
+  char * test1 = (char *)malloc(sizeof(char) * 12);
+  strcpy(test1, "aabcccccaaa");
+  assert_string_equal(p6(test1),"a2b1c5a3");
+  free(test1);
 }
 
 static void test_p7(){
