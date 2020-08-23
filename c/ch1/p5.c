@@ -20,8 +20,10 @@ int insertChar(char* s1, char* s2, int loc){
   }
   temp[i] = '\0';
   if(strcmp(temp, s1) == 0){
+    free(temp);
     return 1;
   }
+  free(temp);
   return 0;
 }
 
@@ -34,8 +36,10 @@ int removeChar(char* s1, char* s2, int loc){
   }
   temp[i] = '\0';
   if(strcmp(temp, s1) == 0){
+    free(temp);
     return 1;
   }
+  free(temp);
   return 0;
 }
 
