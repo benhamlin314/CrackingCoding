@@ -13,7 +13,7 @@ DATE: 12/2/2019
 #include "header.h"
 
 char* p6(char* s){
-  char * comp = (char*)malloc(sizeof(char) * strlen(s));
+  char * comp = (char*)malloc(sizeof(char) * (strlen(s)+1));
   int count = 0;
   int i = 0;
   char temp = s[i];
