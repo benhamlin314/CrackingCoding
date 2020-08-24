@@ -35,7 +35,7 @@ int removeChar(char* s1, char* s2, int loc){
   for(i = loc+1; s2[i] != '\0'; ++i){
     temp[i-1] = s2[i];
   }
-  temp[i-1] = '\0';
+  temp[i] = '\0';
   printf("%s remove\n", temp);
   if(strcmp(temp, s1) == 0){
     free(temp);
