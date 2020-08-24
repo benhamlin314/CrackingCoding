@@ -19,6 +19,7 @@ int insertChar(char* s1, char* s2, int loc){
     temp[i] = s2[i];
   }
   temp[i] = '\0';
+  printf("%s insert\n", temp);
   if(strcmp(temp, s1) == 0){
     free(temp);
     return 1;
@@ -35,6 +36,7 @@ int removeChar(char* s1, char* s2, int loc){
     temp[i-1] = s2[i];
   }
   temp[i-1] = '\0';
+  printf("%s remove\n", temp);
   if(strcmp(temp, s1) == 0){
     free(temp);
     return 1;
@@ -46,6 +48,7 @@ int removeChar(char* s1, char* s2, int loc){
 int replaceChar(char* s1, char* s2, int loc){
   char temp = s2[loc];
   s2[loc] = s1[loc];
+  printf("%s replace\n", temp);
   if(strcmp(s1, s2) == 0){
     s2[loc] = temp;
     return 1;
