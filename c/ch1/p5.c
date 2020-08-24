@@ -33,7 +33,7 @@ int removeChar(char* s1, char* s2, int loc){
   strncpy(temp, s2, loc-1);
   int i = 0;
   for(i = loc+1; s2[i] != '\0'; ++i){
-    temp[i-1] = s2[i];
+    temp[i] = s2[i];
   }
   temp[i] = '\0';
   printf("%s remove\n", temp);
